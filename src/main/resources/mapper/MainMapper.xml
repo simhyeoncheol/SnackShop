@@ -7,4 +7,16 @@
 <mapper namespace="com.SnackShop.Dao.MainDao">
 
 
+<select id="getProducts">
+	SELECT * FROM PRODUCTS
+</select>
+<select id="getDetail">
+	SELECT * FROM PRODUCTS WHERE CODE = #{code}
+</select>
+<select id="getkorean">
+	SELECT * FROM PRODUCTS WHERE STATE = '국내'
+</select>
+<select id="getglobal">
+	SELECT * FROM PRODUCTS WHERE STATE = '해외'
+</select>
 </mapper>
