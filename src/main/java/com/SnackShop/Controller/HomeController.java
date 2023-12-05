@@ -52,6 +52,13 @@ public class HomeController {
 		return mav;
 		
 	}
+
+	@RequestMapping(value = "/AboutUs", method = RequestMethod.GET)
+	public ModelAndView AboutUs() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("AboutUs");
+		return mav;
+	}
 	
 	@RequestMapping(value = "/KoreanSnack")
 	public ModelAndView KoreanSnack () {
